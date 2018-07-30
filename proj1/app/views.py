@@ -338,6 +338,6 @@ def approve(request):
     pdf = buffer.getvalue()
     buffer.close()
     response.write(pdf)
-
+    #Added Comment 
     #return render(request,'/pdf_generator',context)
     return redirect("/librarian_dash")
